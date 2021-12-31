@@ -33,7 +33,8 @@ export default defineConfig({
   // vite配置别名
   resolve: {
     alias: {
-      "/@/": resolve(__dirname, "src")
+      "@": resolve(__dirname, "src"),
+      "apis": resolve(__dirname, "src/api")
     }
   }
 })

@@ -2,7 +2,12 @@
   "name": "vt-admin",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode development",
+    "test": "vite --mode test",
+    "prod": "vite --mode production",
+    "build:dev": "tsc && vite build --mode development",
+    "build:test": "tsc && vite build --mode test",
+    "build:prod": "tsc && vite build --mode production",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "lint": "eslint --ext .js --ext .jsx src"
@@ -11,6 +16,7 @@
     "@ant-design/icons": "^4.7.0",
     "@types/node": "^16.11.11",
     "antd": "^4.17.4",
+    "axios": "^0.24.0",
     "less-loader": "^10.2.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
