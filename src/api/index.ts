@@ -5,11 +5,11 @@ import { request } from "./request";
  */
 
 export class UserService {
-    static async login(params: object) {
-        return request("/login", params, "post")
-    }
-
-    static async getUser (params: object) {
+     /**
+     * @description 获取登陆口令
+     * @return {HttpResponse} result
+     */
+    static async login (params: object) {
         return request("api/user/getToken", params, "post")
     }
 }

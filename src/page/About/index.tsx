@@ -4,7 +4,7 @@ import { UserService } from "@/api"
 const About: React.FC = () => {
 
     useEffect(() => {
-        UserService.getUser({
+        UserService.login({
             username: "vt",
             password: "123456"
         })

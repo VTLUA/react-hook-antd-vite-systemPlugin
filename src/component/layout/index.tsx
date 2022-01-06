@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import NavLeft from "../navLeft";
 import routes from "../../router";
+import Login from "@/page/Login";
 import "./index.less"
 
 const { Header, Content, Sider } = Layout;
@@ -17,6 +18,9 @@ const LayoutCom: React.FC = () => {
 
     return (
         <Layout >
+            <Routes>
+                <Route path="/login" key="login" element={<Login />}></Route>
+            </Routes>
             <Sider trigger={null} collapsible collapsed={collapsed}>
                 <h2 className="admin-title">VT ADMIN</h2>
                 <NavLeft />
@@ -34,13 +38,12 @@ const LayoutCom: React.FC = () => {
                   <Routes>
                     {
                         routes.map(item => {
-                        return   <Route path={item.key} key={item.key} element={item.component}/>
+                        return <Route path={item.key} key={item.key} element={item.component}/>
                         })
                     }
                     </Routes>
                   </div>
                </Content>
-
             </Layout>
         </Layout>
     )
