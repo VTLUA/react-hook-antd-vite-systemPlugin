@@ -23,7 +23,7 @@ export default defineConfig({
       less: {
         javascriptEnabled: true,
         modifyVars: {
-          "primary-color": "#0084ff",
+          "primary-color": "#041527",
           "link-color": "#ff704c",
           "border-radius-base": "4px"
         }

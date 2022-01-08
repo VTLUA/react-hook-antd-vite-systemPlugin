@@ -35,7 +35,7 @@ const renderMenu = (data: any) => {
 
 const NavLeft: React.FC = () => {
     const [currentKey, setCurrentKey] = useState("");
-    const [menuTreeNode] = useState(renderMenu(routes))
+    const [menuTreeNode] = useState(renderMenu(routes[0].childRoutes))
 
     // 菜单点击
     const handleClick = (nav: any) => {

@@ -7,7 +7,7 @@ axios.defaults.timeout = 60000;
 
 const envMode = {
   dev: "http://127.0.0.1:7002", // 本地起的服务端口
-  test: "http://127.0.0.1:7001", // 本地起的服务端口
+  test: "http://127.0.0.1:7002", // 本地起的服务端口
   prod: "http://vt-prod.com"
 };
 
