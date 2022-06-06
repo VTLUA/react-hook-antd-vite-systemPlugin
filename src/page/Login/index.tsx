@@ -10,12 +10,12 @@ const Login: React.FC = () => {
     const dispatch = useDispatch();
 
     const onFinish = (values: any) => {
-        console.log('Success:', values);
+        console.log("Success:", values);
         dispatch(getTokenMethod(values));
     };
 
     const onFinishFailed = (errorInfo: any) => {
-        console.log('Failed:', errorInfo);
+        console.log("Failed:", errorInfo);
     }
 
     return (

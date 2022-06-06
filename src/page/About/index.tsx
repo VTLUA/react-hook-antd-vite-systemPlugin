@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import { UserService } from "@/api"
+import { Card } from "antd";
+import { UserService } from "@/api";
+import { ReducerDemo, EffectDemo, RefDemo } from "./demoConpents";
 
 const About: React.FC = () => {
 
@@ -11,8 +13,20 @@ const About: React.FC = () => {
     }, [])
 
     return (
-        <div>
-            About
+        <div className="hook">
+            {/* <Card title="useState Demos">
+                <StateDemoOne />
+            </Card>
+            <Card title="useCallback Demos">
+                <CallBackDemo />
+            </Card> */}
+            <Card title="useReducer Demos">
+                <ReducerDemo />
+            </Card>
+            <Card title="useEffect Demos">
+                <EffectDemo />
+            </Card>
+            <RefDemo />
         </div>
     )
 }

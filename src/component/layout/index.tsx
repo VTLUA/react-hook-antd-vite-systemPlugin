@@ -32,14 +32,14 @@ const LayoutCom: React.FC = () => {
                 </Header>
                <Content className="container">
                   {/* <Breadcrumb></Breadcrumb> */}
-                  <div className="main">
-                  <Routes>
-                    {
-                        routes[0].childRoutes.map(item => {
-                            return <Route path={item.key} key={item.key} element={<item.component/>}/>
-                        })
-                    }
-                    </Routes>
+                  <div className="site-layout-content">
+                    <Routes>
+                        {
+                            routes[0].childRoutes.map(item => {
+                                return <Route path={item.key} key={item.key} element={<item.component/>}/>
+                            })
+                        }
+                        </Routes>
                   </div>
                </Content>
             </Layout>

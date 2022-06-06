@@ -1,7 +1,7 @@
 import React, { lazy, useEffect } from "react";
 import { RootState } from "./store/store";
 import Home from "@/page/Home";
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from "react-redux";
 import { getToken } from "@/store/feature/userSlice";
 import "./App.css"
 import Login from "./page/Login";

@@ -34,7 +34,6 @@ export const userSlice = createSlice({
             } else {
                 message.error(data.msg);
             }
-            
         })
     }
 });
